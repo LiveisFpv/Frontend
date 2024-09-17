@@ -1,4 +1,5 @@
 .ascii_image{
+    min-width: 1200px;
     text-align: center;
     font-size: 2px;
     color: black;
