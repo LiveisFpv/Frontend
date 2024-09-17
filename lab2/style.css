@@ -1,0 +1,121 @@
+
+.header{
+    width: 1920px;
+    padding: 20px 160px;
+    gap: 10px;
+    border-bottom: 1px #eaecf0 solid;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.header-image {
+    width: 32px;
+    height: 32px;
+    color: #0d1421;
+
+}
+.header-content {
+    gap: 16px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Inter",sans-serif;
+    color:#354153;
+}
+
+.frame1{
+    padding-left: 160px;
+    width: 1920px;
+    top: 112px;
+    left: 160px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.button-group{
+    border-radius: 8px;
+    border: 1px #EAECF0 solid;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    border: 0px;
+    border-right: 1px #EAECF0 solid;
+    padding: 8px 16px;
+    gap: 8px;
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #354153;
+}
+select{
+    border-radius: 8px;
+    border: 1px #EAECF0 solid;
+    padding: 8px 16px;
+    gap: 8px;
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #354153;
+}
+.frame2{
+    margin: 0px;
+    padding-left: 160px;
+    gap: 32px;
+    width: 1920px;
+    top: 176px;
+    left: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.frame3{
+    margin: 0px;
+    width: 376px;
+    height: 600px;
+    border-radius: 16px;
+    border: 1px #eaecf0 solid;
+    padding: 16px 24px;
+    gap:16px;
+}
+.name{
+    font-family:"Inter",sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0d1421;
+}
+.phone{
+    font-family:"Inter",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #354153;
+}
+.footer{
+    color:gray;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 1920px;
+    top: 1008px;
+    padding: 24px 160px;
+    gap: 10px;
+    opacity: 0px;
+    margin: 0px;
+}
+#profile{
+    padding: 0px;
+    width: 22px;
+    height: 22px;
+    gap: 16px;
+}
