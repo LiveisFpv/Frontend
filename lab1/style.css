@@ -1,0 +1,8 @@
+.ascii_image{
+    text-align: center;
+    font-size: 2px;
+    color: black;
+    border: 2px solid;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+}
