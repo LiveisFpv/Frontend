@@ -15,6 +15,13 @@
     color: #0d1421;
 
 }
+.image-button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-image:"logo.svg";
+    background-size: cover;
+  }
 .header-content {
     gap: 16px;
     margin: 0px;
