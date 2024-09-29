@@ -1,8 +1,7 @@
 
 .header{
-    width: 1920px;
+    width: calc(100% - 160px);
     padding: 20px 160px;
-    gap: 10px;
     border-bottom: 1px #eaecf0 solid;
     opacity: 0px;
     display: flex;
@@ -23,12 +22,12 @@
     background-size: cover;
   }
 .header-content {
-    gap: 16px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
 }
 .header-name{
+    margin-left: 8px;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -38,9 +37,7 @@
 
 .frame1{
     padding-left: 160px;
-    width: 1920px;
-    top: 112px;
-    left: 160px;
+    width: calc(100%-160px);
     display: flex;
     justify-content: space-between;
 
@@ -57,7 +54,6 @@ button{
     border: 0px;
     border-right: 1px #EAECF0 solid;
     padding: 8px 16px;
-    gap: 8px;
     font-family: "Inter",sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -68,7 +64,6 @@ select{
     border-radius: 8px;
     border: 1px #EAECF0 solid;
     padding: 8px 16px;
-    gap: 8px;
     font-family: "Inter",sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -79,16 +74,14 @@ select{
     margin: 0px;
     padding-left: 160px;
     gap: 32px;
-    width: 1920px;
-    top: 176px;
-    left: 160px;
+    width: calc(100%-160px);
     display: flex;
     justify-content: space-between;
 }
 .frame3{
     margin: 0px;
     width: 376px;
-    height: 600px;
+    height: auto;
     border-radius: 16px;
     border: 1px #eaecf0 solid;
     padding: 16px 24px;
@@ -114,7 +107,6 @@ select{
     line-height: 24px;
     font-weight: 400;
     width: 1920px;
-    top: 1008px;
     padding: 24px 160px;
     gap: 10px;
     opacity: 0px;
