@@ -71,9 +71,8 @@ select{
     color: #354153;
 }
 .frame2{
-    margin: 0px;
+    gap: 16px;
     padding-left: 160px;
-    gap: 32px;
     width: calc(100%-160px);
     display: flex;
     justify-content: space-between;
@@ -85,7 +84,6 @@ select{
     border-radius: 16px;
     border: 1px #eaecf0 solid;
     padding: 16px 24px;
-    gap:16px;
 }
 .name{
     font-family:"Inter",sans-serif;
@@ -106,15 +104,9 @@ select{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    width: 1920px;
     padding: 24px 160px;
-    gap: 10px;
-    opacity: 0px;
-    margin: 0px;
 }
 #profile{
-    padding: 0px;
     width: 22px;
     height: 22px;
-    gap: 16px;
 }
