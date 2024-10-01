@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 header {
-    width: 100vw;
+    width: 100%;
     padding-top: 100px;
     padding-left: 8vw;
     padding-right: 10vw;
