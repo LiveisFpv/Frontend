@@ -84,9 +84,41 @@ select{
     height: auto;
     border-radius: 16px;
     border: 1px #eaecf0 solid;
-    padding: 16px 24px;
+    margin: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.frame3 .image1{
+    width: 376px;
+    height: 492px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: url("image.png") center/cover no-repeat;
+}
+.frame3 .image2{
+    width: 376px;
+    height: 492px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: url("image 1.png") center/cover no-repeat;
+}
+.frame3 .image3{
+    width: 376px;
+    height: 492px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: url("image 2.png") center/cover no-repeat;
+}
+.frame3 .image4{
+    width: 376px;
+    height: 492px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: url("image 3.png") center/cover no-repeat;
 }
 .name{
+    padding-left: 16px;
     font-family:"Inter",sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -94,6 +126,7 @@ select{
     color: #0d1421;
 }
 .phone{
+    padding-left: 16px;
     font-family:"Inter",sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -110,4 +143,6 @@ select{
 #profile{
     width: 22px;
     height: 22px;
+    border: 0px;
+    background: url("user.svg") center/cover no-repeat;
 }
