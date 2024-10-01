@@ -1,6 +1,5 @@
-
 .header{
-    width: calc(100% - 160px);
+    width: calc(100% - 320px);
     padding: 20px 160px;
     border-bottom: 1px #eaecf0 solid;
     opacity: 0px;
@@ -37,7 +36,8 @@
 
 .frame1{
     padding-left: 160px;
-    width: calc(100%-160px);
+    padding-right: 160px;
+    width: calc(100%-320px);
     display: flex;
     justify-content: space-between;
 
@@ -73,7 +73,8 @@ select{
 .frame2{
     gap: 16px;
     padding-left: 160px;
-    width: calc(100%-160px);
+    padding-right: 160px;
+    width: calc(100%-320px);
     display: flex;
     justify-content: space-between;
 }
