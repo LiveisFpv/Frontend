@@ -9,9 +9,10 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 50px;
 }
 header {
+    padding: 0px 80px;
+    padding-top: 70px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -23,7 +24,7 @@ header p{
     font-weight: 700;
 }
 header .clickble-group{
-    grid-column: 5/-1;
+    grid-column: 6/-1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,4 +59,88 @@ header .clickble-group a{
     width: 18px;
     height: 18px;
     background: url("https://s3-alpha-sig.figma.com/img/b61e/5583/b6d0b50da3a490670bb4d18ba85991d9?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KFyPUhuwe3~SJCmW9icmUn6S-exwmwaYYhcEuqYiY83Y7569JRQULJVfbnrN01xu3sH7kdzoWq8KwVG-xOK~Cd673FkpykyeLSLJrBY3z5pekFGBb0UrXY61iTSnlckvx1Bq4137UM9rjX1MKjLKqhw185xMt-GyNcyGNV7kPu-ERqFSC3486sx4um0htcUr9U7VqrDymA-zczGF6VBDK-5zrdJhiPs9O-Y2BwwyvUFmspACAypbR-93ofcBSRdmAexhyMRMiwf8-VgY9XoeXmR2M9VwJcWNKo3do88dYpccdixTuS9yBrFAAW2-q1fsBve0NJYqx~MAaZakWCZZsQ__") center center/cover no-repeat;
+}
+main{
+    padding: 100px 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Автоматически адаптируем количество столбцов */
+    grid-gap: 50px;
+    align-items: center;
+}
+main .image-frame{
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-gap: 10px;
+}
+main .image1, .image2, .image3, .image4, .image5, .image6{
+    width:100%;
+    min-width: 320px;
+    aspect-ratio: 32/37;
+}
+main .image1{
+    background: url("https://s3-alpha-sig.figma.com/img/c811/92cc/b4ccd628d53fbc23696500a30964f78b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UJ5n-S~W3gnT9orT191LTqDAdIPnYIhXLEu3sqYl6hvT4fPfiSljfw0-FDzGHHOtoT-B5IosL0pni5XDKLoi1cvUCXJcbX12otRAlII9yrksqddjR9o4QCBcwlM~5mp7iVL02hdf1gHBlU~xNYkOhQsnlpYISNcZsNaFAo8-udUXD6pH~iH~fM-sho4Jvdmy04Xir~7-8IEZe-2rsYWkUw185UUiiczQjpWZUvbR7tirI3H0N7aii-qcMqi6CaqiP9xEhCqV7UzfILm3OK7QiT8t-DinQ9GYN9-STxQpYDgvFb6clAzAStCC7NheGztIaU1sc9rGoVUp0MDq4Ze8IQ__") center center/cover no-repeat;
+}
+main .image2{
+    background: url("https://s3-alpha-sig.figma.com/img/6480/28b2/a9572ca47894f65021088e3fd4051a86?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JXiZYBbc7lCWRR5dXv35TTt1m3ZGARTYH8eHiJir7GkeJLa43xIcqyAAPixFO3MZQTtAF3TgnNsekRUKLnbmWMS4gL6Jew77R7xFmoy43p6gJB9cITRt0lVZSDFLiHHI5UwrzDdVCF1XnACUwGiumK8bGQQ2wvWI8NXZyFnj-qv1hEur-Zr5annXxoK5f8NwvSiTbV4T2i3ESByEDyWlB2T5e9V7V8noKa7BDCXr0Xf2oUZQfusHSEO4fC~gNitW3pkwcO~SuJKNDmnHWUVbYUaC1-pTHyPYV1cTTwRrBUHdqWnDabDFnL1JrAozibMPQWrfNzbjn1cl2gKtOYLBHw__") center center/cover no-repeat;
+}
+main .image3{
+    background: url("https://s3-alpha-sig.figma.com/img/fc19/bfa5/a7ed2980581ea638d0e851f214cd569d?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d3YacSYLb6W5bwByh9phi~J3ZwZ14q3lsXfnu0F4r2p9HtJ~qlNSMUORYyUQ2CAug8wAdmv4uCIWYMsSzhk8Q1xXNnhtn4K6fxfF0rYHXd1SN9uCJ2t3HTX6s7poSSBZ36zThJ0NHCpMsmWMspsg9F-EVVHhHh4qGI6n6sjyk2NB2Zau1SCC3QhlOPl6uqwqLNRxG2JlOS3I4Frj4H59FIPXJRo16~FCTM5z48rNsG6r9dyp-7cQzE1sP-GkmxRotr1FG6dn5iMk7PeDZf6uPARqwDLgglKLQO0RYfMCYYjNQ4n75leGJzoJZ9-tVS8i49A07bFZks05igvTLcGepA__") center center/cover no-repeat;
+}
+main .image4{
+    background: url("https://s3-alpha-sig.figma.com/img/ba57/b362/ca6bea79c2f5abf1e4071ebbb624ee2b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CZFThVUa2eyrcKy-fPHBXBrqqDcedhGuSldAh01FCq055ogld3ATKXdNcMjweAhZmAU3FbSYfZTQuRWNVSGKyJP-Xmtr0AgtIwPfyQp3Y22h7~B27HJ4tTbslJdhu9vNy9euUMmxqQXZ46rLtoebOuV~IlviAGbqKyXbdXwAx5YtAhmttDxL0oDfZiWFEk9elhp~IfFySc5Ss~4LRSh32L9Qarv-lkrDI6tE84h3iBRyMjuNFN3u1-gSfbHnc3O6gdP~9yyJ3y5codZwNA8nmfYJRg95I-KJEyrxDm8GPyH0rtEu-r52xNS-xmQUpJ5hkB0AW-vf9OO82~2oTM2AuA__") center center/cover no-repeat;
+}
+main .image5{
+    background: url("https://s3-alpha-sig.figma.com/img/eead/9c6c/2b53e74625d016db0f1de59fed119a03?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ctKBfz1CV5KLkkgPIwem3Eltf2b4THI7f907AvddhybfxW~Ia5d5nj2xEXLJfUZcFayFCs~DfR6Y0fXUsuSF6LMeQhjhjoSzkSiXELs4C4pW-M5lY85-aV1aWj7TdKc8-W5bMMmImw8QcBUpKOMfSEspNIyycMU2k4AZFQDuE9QSsHRhy8a~Jc5X9463HtHE-0unVg07O~GLT6YR6BCWxmhGKNtSq9Kh8FW8IX3F6zuV~FR8n4wrg8pV1KPda48ynuAkKL7ZaNGU0oG1H9vqguQj915bVHMhJsFByg7q750fo0TOKnFPsllHWdZuEJHzDyq22zvwbZGW9SvStA6tng__") center center/cover no-repeat;
+}
+main .image6{
+    background: url("https://s3-alpha-sig.figma.com/img/8d7d/cf73/80aea9c84bc0a32ee1880c6c0a3d1ab0?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Plp-j2jESUT8cX-6FpDZgPRqejhek-GwfuorRYKfB-ibV-LZBsOHOxVTw-0744-9KSFe5U46YCzpRH6ZlEzrYTqPzGX-eznJr0Y5n4ePqy0fR9Zom-OqrrqHJn3-3LED~EkyO0eYskqs9n1PBEiZk84oP~fl2pUI23bdOkv1bK9aDbTlYOSy5ubvxJmlAFavT3V0UDcivS1vjbt8g4lPjcp9aefvbUNawq3Chsg-m1LR9XNmKqDrw5zKOO3JRgSn2R0tnB7HcvS11w~j-Kkg-sQ859-C9cklvUb3RTL8PExQ4L-f1OMSkxVz8MdasGCOMpM9v3BZTdrSLKFFd1JduQ__") center center/cover no-repeat;
+}
+main .text-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+main .text-area #name{
+    font-size: 24px ;
+    font-weight: 700;
+    color: #292929;
+}
+main .text-area #cost{
+    font-size: 24px ;
+    font-weight: 700;
+    color: #878787;
+}
+main .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+main .button p{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #838383;
+}
+main .button .image-cart{
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ededed;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ababab;
 }
