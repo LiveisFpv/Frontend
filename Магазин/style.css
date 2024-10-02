@@ -75,11 +75,14 @@ main .image-frame{
     flex-direction: column;
     justify-content: space-between;
     grid-gap: 10px;
+    
 }
 main .image1, .image2, .image3, .image4, .image5, .image6{
     width:100%;
     min-width: 320px;
     aspect-ratio: 32/37;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
 main .image1{
     background: url("https://s3-alpha-sig.figma.com/img/c811/92cc/b4ccd628d53fbc23696500a30964f78b?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UJ5n-S~W3gnT9orT191LTqDAdIPnYIhXLEu3sqYl6hvT4fPfiSljfw0-FDzGHHOtoT-B5IosL0pni5XDKLoi1cvUCXJcbX12otRAlII9yrksqddjR9o4QCBcwlM~5mp7iVL02hdf1gHBlU~xNYkOhQsnlpYISNcZsNaFAo8-udUXD6pH~iH~fM-sho4Jvdmy04Xir~7-8IEZe-2rsYWkUw185UUiiczQjpWZUvbR7tirI3H0N7aii-qcMqi6CaqiP9xEhCqV7UzfILm3OK7QiT8t-DinQ9GYN9-STxQpYDgvFb6clAzAStCC7NheGztIaU1sc9rGoVUp0MDq4Ze8IQ__") center center/cover no-repeat;
