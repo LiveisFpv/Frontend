@@ -65,6 +65,7 @@ header .frame{
     height: 60px;
     border-radius: 50px;
     border: 0px;
+    padding: 0px 20px;
 }
 header .logo{
     display: flex;
