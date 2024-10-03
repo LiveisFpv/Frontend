@@ -108,12 +108,12 @@ main .text-area{
     align-items: center;
     flex-direction: row;
 }
-main .text-area #name{
+main .text-area .name{
     font-size: 24px ;
     font-weight: 700;
     color: #292929;
 }
-main .text-area #cost{
+main .text-area .cost{
     font-size: 24px ;
     font-weight: 700;
     color: #878787;
