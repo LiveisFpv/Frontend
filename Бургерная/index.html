@@ -19,13 +19,13 @@
                 <p id="text">Vintage Food</p>
             </div>
             <div class="menu">
-                <p class="menu-text">Главная</p>
-                <p class="menu-text">Акции</p>
-                <p class="menu-text">О нас</p>
+                <a href="#" class="menu-text">Главная</a>
+                <a href="#" class="menu-text">Акции</a>
+                <a href="#" class="menu-text">О нас</a>
             </div>
             <div class="buy">
-                <form action="buy" method="post">
-                    <button type="button" class="buy-img"></button>
+                <form action="buy" method="POST">
+                    <button type="button" class="buy-img" onclick="buy"></button>
                 </form>
             </div>
         </div>
@@ -33,8 +33,8 @@
             <div class="text-block">
                 <p id="large-text">Быстрая доставка для Вас</p>
                 <p id="small-text">Сделай первый заказ и получи скидку 50%</p>
-                <form action="buy" method="post">
-                    <button type="button" id="button">Заказать</button>
+                <form action="buy" method="POST">
+                    <button type="button" id="button" onclick="buy">Заказать</button>
                 </form>
             </div>
             <div class="burger"></div>
