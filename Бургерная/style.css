@@ -11,8 +11,8 @@ body{
 }
 header {
     width: 100%;
-    padding-top: 100px;
-    padding-left: 8vw;
+    padding-top: 8vh;
+    padding-left: 10vw;
     padding-right: 10vw;
     background: linear-gradient(180deg, #eda418 ,white 100%);
     display: flex;
@@ -21,7 +21,8 @@ header {
     align-items: center; 
 }
 header .header{
-    gap:10vw;
+    width: 100%;
+    column-gap:10vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,16 +30,18 @@ header .header{
     flex-wrap: wrap;
 }
 header .frame{
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
     flex-wrap: wrap;
-    gap: 8vw;
+    gap: 8%;
 }
 .frame .burger{
-    width: 642px;
-    height: 600px;
+    aspect-ratio: 642/600;
+    width:100%;
+    max-width: 642px;
     background: url("https://s3-alpha-sig.figma.com/img/6722/b735/ca6439841481aef21d87059c03116f8c?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pzgBFS8npVPDmC1ipnMOqfHIvnuDxSsha1w~k9dnQbeUXzf2dDJdtnDruMlmvNN4NOnM5-yIN~NZbcPKfYiu~Uf3wUM0BbT2zJei5DRvXZVePsP6-hFTroE11uO~Ch3jc9PN~PdI2C-n5OLVYHXmvJS5FFSmxq8BRhTMmeCfoq9jBNnIE1OJ3tjFJxmdTT07kfrmZoySPKxsUSLRJdyQyd95TOueI8QpqRaGyOEfSq55asr8UC-9XkVV0zyTRrvIGfo5yXEj-OfNg4bCv4PEv1Q4~jPWQOzQ~v9dsCRqo9ExacJu1Q3a9vZiUPlvVY6O~DPn6hBceY~B8AsgpEmW-w__") center center/cover no-repeat;
 }
 .frame .text-block {
@@ -50,12 +53,12 @@ header .frame{
 .text-block #large-text{
     font-weight: 800;
     font-size: 32px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .text-block #small-text{
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .text-block #button{
     font-size: 24px;
