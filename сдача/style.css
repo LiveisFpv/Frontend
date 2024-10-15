@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    font: "Inter",sans-serif;
+}
+header{
+    padding: 0px 240px;
+    padding-top: 24px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navigation{
+    gap: 10px;
+}
+header button{
+    background-color: white;
+    border: 1px solid #EAECF0;
+    border-radius: 99px;
+    
+}
+header button p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 20px;
+}
+header .brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+header .brand img{
+    width: 32px;
+    height: 32px;
+}
+header .brand p{
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 24px;
+    color: #354153;
+}
+header .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+header .action button{
+    width: 44px;
+    height: 44px;
+    border: 1px solid #EAECF0;
+    border-radius: 999px;
+}
+header .action #shop{
+    color:black;
+    background: url("Vector\ \(1\).svg") center/cover no-repeat;
+    width: 20px; 
+    height: 20px;
+}
+header .action #buy{
+    color: black;
+    background: url("Vector\ \(2\).svg") center/cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.frame13{
+    width: 100%;
+    padding: 0px 240px;
+}
+.frame12{
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frame12 h1{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #0D1421;
+}
+.frame12 select{
+    background: white;
+    border: 1px solid #EAECF0;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.frame3{
+    padding-left: 240px;
+    display: flex;
+    gap: 32px;
+}
+.frame3 .frame4, .frame5, .frame6{
+    width: 345px;
+    height: 450px;
+    border-radius: 24px;
+}
+.frame4{
+    background: url('https://s3-alpha-sig.figma.com/img/78de/94ee/495590333d520d539766e5fcf85fb7d6?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SeYJ89eZxHr9pTYPcoc7LGWeK5ylE3Lto7mZ~roRF4GWiqoBMonTh-RCqr4Mfcr4XjRQKl0RYHUXiMkuEXTG-p15ozUrCQCDM9mrpbbfEeGHJbDywXDdAu~W4Uz2OVsyy~p2QoDiSqdkXjjQjr3tkxqZgXN3r~VIPF~mDepTiohN6sTVM8euXNWRYJpNVsp0UVTFN3DipFww-ILx~2jXk0cU3ZRL6L-uucOYeEXnNdEyB2uKRbgsGyhyBiHfu7lU-T89mUtoaVB9VpfPfy1jN3PSnvKbYPygL0UPfrdVi62tAUS3h~bV4g2~FdhsKTJsyNSPTo07YOgHUtG6Sg3pbw__') center no-repeat;
+}
+.frame5{
+    background: url('https://s3-alpha-sig.figma.com/img/78de/94ee/495590333d520d539766e5fcf85fb7d6?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SeYJ89eZxHr9pTYPcoc7LGWeK5ylE3Lto7mZ~roRF4GWiqoBMonTh-RCqr4Mfcr4XjRQKl0RYHUXiMkuEXTG-p15ozUrCQCDM9mrpbbfEeGHJbDywXDdAu~W4Uz2OVsyy~p2QoDiSqdkXjjQjr3tkxqZgXN3r~VIPF~mDepTiohN6sTVM8euXNWRYJpNVsp0UVTFN3DipFww-ILx~2jXk0cU3ZRL6L-uucOYeEXnNdEyB2uKRbgsGyhyBiHfu7lU-T89mUtoaVB9VpfPfy1jN3PSnvKbYPygL0UPfrdVi62tAUS3h~bV4g2~FdhsKTJsyNSPTo07YOgHUtG6Sg3pbw__') center no-repeat;
+}
+.frame6{
+    background: url('https://s3-alpha-sig.figma.com/img/78de/94ee/495590333d520d539766e5fcf85fb7d6?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SeYJ89eZxHr9pTYPcoc7LGWeK5ylE3Lto7mZ~roRF4GWiqoBMonTh-RCqr4Mfcr4XjRQKl0RYHUXiMkuEXTG-p15ozUrCQCDM9mrpbbfEeGHJbDywXDdAu~W4Uz2OVsyy~p2QoDiSqdkXjjQjr3tkxqZgXN3r~VIPF~mDepTiohN6sTVM8euXNWRYJpNVsp0UVTFN3DipFww-ILx~2jXk0cU3ZRL6L-uucOYeEXnNdEyB2uKRbgsGyhyBiHfu7lU-T89mUtoaVB9VpfPfy1jN3PSnvKbYPygL0UPfrdVi62tAUS3h~bV4g2~FdhsKTJsyNSPTo07YOgHUtG6Sg3pbw__') center no-repeat;
+}
+.frame2{
+    margin-top: 466px;
+    padding: 0px 24px;
+}
+.frame2 h1{
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+color: #0D1421;
+}
+.frame p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #0D1421;
+}
