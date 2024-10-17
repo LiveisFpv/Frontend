@@ -86,14 +86,14 @@ select{
 }
 .frame2{
     margin-top: 20px;
-    gap: 16px;
+    gap: 32px;
     margin-left: 8.3%;
     margin-right: 8.3%;
     width: 83.4%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .frame3{
     margin: 0px;
