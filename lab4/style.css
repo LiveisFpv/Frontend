@@ -20,8 +20,16 @@ body{
     width: 32px;
     height: 32px;
     color: #0d1421;
-
+    animation: 2s cubic-bezier(0.65, 0.05, 0.36, 1) 0s normal none 1 running rot;
 }
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 .header-content {
     margin: 0px;
     display: flex;
@@ -44,14 +52,27 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+}
+@keyframes slidein {
+    from {
+      transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(0vw);
+    }
+  }
+button{
+    background-color: #F9FAFB;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: lightblue;
 }
 .button-group{
     display: flex;
     justify-content: space-between;
 }
 .button-group #b1{
-    background-color: #F9FAFB;
     border: 1px #EAECF0 solid;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -63,7 +84,7 @@ body{
     color: #354153;
 }
 .button-group #b2{
-    background-color: #F9FAFB;
+    
     border: 1px #EAECF0 solid;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -75,6 +96,7 @@ body{
     color: #354153;
 }
 select{
+    background-color: #F9FAFB;
     border-radius: 8px;
     border: 1px #EAECF0 solid;
     padding: 8px 16px;
@@ -94,6 +116,7 @@ select{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    animation: 1.7s cubic-bezier(0.65, 0.05, 0.36, 1) 0.3s 1 normal running slidein;
 }
 .frame3{
     margin: 0px;
@@ -163,4 +186,8 @@ select{
     height: 24px;
     border: 0px;
     background: url("user.svg") center/cover no-repeat;
+}
+#profile:hover{
+    width: 30px;
+    height: 30px;
 }
