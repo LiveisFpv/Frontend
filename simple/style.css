@@ -1,0 +1,300 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #666666;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    padding: 28px 11.46% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DDDDDD;
+}
+header a{
+    text-decoration: none;
+    color: #4C5866;
+    font-size: 20px;
+    font-weight: 400;
+}
+header button {
+    border: none;
+    background: rgba(255,255,255, 0);
+    color: #4C5866;
+}
+header .button-group{
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .button-group .frame217{
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header #profile{
+    height: 24px;
+    width: 24px;
+}
+header #search{
+    height: 24px;
+    width: 24px;
+}
+header #logo{
+    height: 22px;
+    width: 140px;
+    vertical-align: center;
+}
+
+.hero{
+    z-index: 0;
+    width: 100%;
+    padding: 0px 11.46% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10%;
+}
+.hero .frame135{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    max-width: 445px;
+    gap: 30px;
+}
+.frame135 h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #4C5866;
+}
+.frame135 p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #85859B;
+}
+.frame135 button{
+    border: 1px solid #7875FE;
+    background: rgba(255,255,255, 0);
+    width: 255px;
+    height: 70px;
+}
+.frame135 button p{
+    color: #7875FE;
+    font-size: 20px;
+    line-height: 23.44px;
+    font-weight: 400;
+}
+.hero img{
+    margin-top: 60px;
+    width: 540px;
+    height: 1336px;
+    object-fit: cover;
+    object-position: 4% 0;
+}
+.frame219{
+    z-index: 100;
+    position: relative;
+    top: -760px;
+    width: 100%;
+    padding: 90px 11.46%;
+    background-color: #EBEBEB;
+}
+.frame219 .frame216{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+.frame219 .frame216 .frame136{
+    border-top: 1px solid #C0C0C0;
+    padding-top:20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.frame219 .frame216 .frame136 p{
+    color: #85859B;
+    font-size: 18px;
+    line-height: 27px;
+}
+.frame219 .frame216 .frame136 b{
+    color: #666666;
+    font-size: 18px;
+    line-height: 27px;
+}
+.frame219 .frame215{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.frame219 .frame215 .frame207{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.frame219 .frame215 .frame207 p{
+    color: #85859B;
+    font-size: 18px;
+    line-height: 27px;
+}
+.frame139{
+    background-color: white;
+    position:relative;
+    margin-top: -760px;
+    width: 100%;
+    padding: 90px 11.46% ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 30px;
+}
+
+.frame139 p{
+    color: #85859B;
+    font-size: 18px;
+    line-height: 30.6px;
+}
+.frame139 small{
+    display: flex;
+    margin: 8px 0px;
+    color: #b5b5bd;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+.frame139 a{
+    margin-top: 20px;
+    display: flex;
+    color: #7875FE;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+}
+.frame139 .frame223{
+    max-width: 350px;   
+}
+.frame139 .frame223 .frame_text{
+    padding-top: 20px;
+    background-color: white ;
+}
+
+.frame139 .frame223 .frame208,.frame209,.frame210,.frame211{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #EBEBEB;
+}
+.frame229{
+    padding: 90px 11.46% ;
+    width: 100%;
+    background-color: #EBEBEB;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.frame229 .frame228,.frame227,.frame226,.frame225{
+    display: flex;
+    border: 1px solid #C4C4C4;
+    width: 255px;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+}
+.frame228 img{
+    padding-bottom:15px;
+}
+.frame224{
+    width: 100%;
+    padding: 90px 11.46% ;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.frame224 .frame207{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.frame224 .frame207 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.6px;
+    color: #85859B;
+}
+.frame224 .frame207 button{
+    border: 1px solid #7875FE;
+    background-color: rgba(255,255,255, 0);
+    width: 255px;
+    height: 70px;
+    color: #7875FE;
+    font-size: 20px;
+    line-height: 23.44px;
+    font-weight: 400;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 410px;
+}
+#Layer{
+    position: relative;
+    margin-top: -363px;
+    left: 150px;
+}
+#signature{
+    position: relative;
+    margin-top: -338px;
+    left: 250px;
+}
+#book{
+    width: 730px;
+    height: 410px;
+}
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 11.46%;
+    width: 100%;
+    background-color: #4C5866;
+}
+footer .frame199{
+    display: flex;
+    gap: 30px;
+}
+body small{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.33px;
+    color: #85859B;
+}
