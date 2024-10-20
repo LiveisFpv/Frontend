@@ -23,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #DDDDDD;
+    flex-wrap: wrap;
 }
 header a{
     text-decoration: none;
@@ -103,15 +104,17 @@ header #logo{
 }
 .hero img{
     margin-top: 60px;
-    width: 540px;
-    height: 1336px;
+    width:37.5vw;
+    max-width: 600px;
+    aspect-ratio: 540/1336;
     object-fit: cover;
     object-position: 4% 0;
 }
 .frame219{
     z-index: 100;
     position: relative;
-    top: -760px;
+    --width:37.5vw;
+    top: max(-940px,calc((var(--width) / 540) * -1336 + 540px));
     width: 100%;
     padding: 90px 11.46%;
     background-color: #EBEBEB;
@@ -162,7 +165,8 @@ header #logo{
 .frame139{
     background-color: white;
     position:relative;
-    margin-top: -760px;
+    --width:37.5vw;
+    margin-top: max(-940px,calc((var(--width) / 540) * -1336 + 540px));
     width: 100%;
     padding: 90px 11.46% ;
     display: flex;
@@ -210,6 +214,7 @@ header #logo{
     background-color: #EBEBEB;
 }
 .frame229{
+    position:relative;
     padding: 90px 11.46% ;
     width: 100%;
     background-color: #EBEBEB;
@@ -230,6 +235,8 @@ header #logo{
     padding-bottom:15px;
 }
 .frame224{
+    background-color: white;
+    position:relative;
     width: 100%;
     padding: 90px 11.46% ;
     display: flex;
