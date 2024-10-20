@@ -9,6 +9,89 @@ h2{
     line-height: 40px;
     color: #666666;
 }
+h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #4C5866;
+}
+@media screen and (max-width: 1024px){
+    header,.hero,.frame219,.frame139,.frame229,.frame224,footer{
+        padding-left: 4.5% !important;
+        padding-right: 4.5% !important;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 677px){
+    h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 28.13px;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    .frame219 .frame215{
+        flex-wrap: wrap;
+    }
+    .frame219 .frame216 img{
+        width: 150px !important;
+        aspect-ratio: 160/118;
+    }
+    .frame229{
+        flex-wrap: wrap;
+    }
+    .frame229 .frame228,.frame227,.frame226,.frame225{
+        width: 45% !important;
+    }
+    .frame135 button{
+        width: 196px !important;
+        height: 60px !important;
+    }
+    .frame224{
+        flex-wrap:wrap-reverse;
+    }
+    .frame224 .frame207 button{
+        width: 196px !important;
+        height: 60px !important;
+    }
+}
+@media screen and (max-width: 575px){
+    .frame219{
+        top: 0px !important;
+        margin-top: 40px !important;
+    }
+    .frame139{
+        top: 0px !important;
+        margin-top: 0px !important;
+    }
+    .frame219 .frame216{
+        flex-wrap: wrap;
+    }
+    .frame219 .frame216 img{
+        width: 130px !important;
+        aspect-ratio: 160/118;
+    }
+    .frame205{
+        width: 130px;
+    }
+}
+@media screen and (max-width: 488px) {
+    .hero img{
+        width: 0px !important;
+    }
+    
+}
 body {
     width: 100%;
     overflow-x: hidden;
@@ -17,7 +100,7 @@ body {
 }
 header {
     width: 100%;
-    padding: 28px 11.46% ;
+    padding: 28px 10% ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,7 +149,7 @@ header #logo{
 .hero{
     z-index: 0;
     width: 100%;
-    padding: 0px 11.46% ;
+    padding: 0px 10% ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,12 +161,6 @@ header #logo{
     margin-top: 130px;
     max-width: 445px;
     gap: 30px;
-}
-.frame135 h1{
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-    color: #4C5866;
 }
 .frame135 p{
     font-size: 18px;
@@ -116,13 +193,13 @@ header #logo{
     --width:37.5vw;
     top: max(-940px,calc((var(--width) / 540) * -1336 + 540px));
     width: 100%;
-    padding: 90px 11.46%;
+    padding: 90px 10%;
     background-color: #EBEBEB;
 }
 .frame219 .frame216{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
 }
 .frame219 .frame216 .frame136{
@@ -131,12 +208,14 @@ header #logo{
     display: flex;
     gap: 30px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 .frame219 .frame216 .frame136 p{
     color: #85859B;
     font-size: 18px;
     line-height: 27px;
+    max-width: 160px;
 }
 .frame219 .frame216 .frame136 b{
     color: #666666;
@@ -151,7 +230,13 @@ header #logo{
     gap: 30px;
     align-items: center;
 }
-
+.frame219 .frame215 img{
+    width: 57%;
+    aspect-ratio: 730/564;
+}
+@media screen and (max-width:1024px) {
+    
+}
 .frame219 .frame215 .frame207{
     display: flex;
     flex-direction: column;
@@ -168,7 +253,7 @@ header #logo{
     --width:37.5vw;
     margin-top: max(-940px,calc((var(--width) / 540) * -1336 + 540px));
     width: 100%;
-    padding: 90px 11.46% ;
+    padding: 90px 10% ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -215,7 +300,7 @@ header #logo{
 }
 .frame229{
     position:relative;
-    padding: 90px 11.46% ;
+    padding: 90px 10% ;
     width: 100%;
     background-color: #EBEBEB;
     align-items: center;
@@ -226,10 +311,14 @@ header #logo{
 .frame229 .frame228,.frame227,.frame226,.frame225{
     display: flex;
     border: 1px solid #C4C4C4;
-    width: 255px;
-    height: 135px;
+    width: 25%;
+    aspect-ratio: 255/135;
     justify-content: center;
     align-items: center;
+}
+.frame229 img{
+    width: 90%;
+    height: 100%;
 }
 .frame228 img{
     padding-bottom:15px;
@@ -238,7 +327,7 @@ header #logo{
     background-color: white;
     position:relative;
     width: 100%;
-    padding: 90px 11.46% ;
+    padding: 90px 10% ;
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -266,31 +355,39 @@ header #logo{
     line-height: 23.44px;
     font-weight: 400;
 }
-.pic{
+.pic { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 410px;
+    width: 100%; 
+    max-width: 730px; 
+    aspect-ratio: 730/410; 
+    position: relative; 
 }
-#Layer{
-    position: relative;
-    margin-top: -363px;
-    left: 150px;
+
+#book {
+    width: 100%; 
+    aspect-ratio: 730/410;
 }
-#signature{
-    position: relative;
-    margin-top: -338px;
-    left: 250px;
+
+#Layer {
+    position: absolute; 
+    top: 12%; 
+    left: 45%; 
+    width: 50.7%;
 }
-#book{
-    width: 730px;
-    height: 410px;
+
+#signature {
+    position: absolute;
+    top: 15%; 
+    left: 80%; 
+    width: 10%; 
 }
 footer{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 29px 11.46%;
+    padding: 29px 10%;
     width: 100%;
     background-color: #4C5866;
 }
