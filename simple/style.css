@@ -31,13 +31,20 @@ h1{
 }
 @media screen and (max-width: 853px){
     header{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
         row-gap: 20px !important;
         padding-bottom: 20px !important;
     }
+    header #logo{
+        padding-left: 33px !important;
+    }
     header .button-group{
+        padding-right: 33px;
         order:1;
     }
     header nav{
+        padding: 0px 33px;
         padding-top: 20px;
         border-top: 1px solid #DDDDDD;
         width: 100% !important;
@@ -85,13 +92,48 @@ h1{
     }
 }
 @media screen and (max-width: 575px){
+    h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .frame135 button{
+        width: 144px !important;
+        height: 50px !important;
+    }
+    .hero{
+        padding: 50px 15px !important;
+    }
+    .hero .frame135{
+        margin-top: 0px !important;
+    }
     .frame219{
         top: 0px !important;
-        margin-top: 40px !important;
+        margin-top: 0px !important;
+        padding: 60px 15px !important;
+    }
+    .frame224 .frame207 button{
+        width: 144px !important;
+        height: 50px !important;
     }
     .frame139{
         top: 0px !important;
         margin-top: 0px !important;
+        padding: 60px 15px !important;
+    }
+    .frame229{
+        scroll-snap-type: x mandatory;
+        width: 100% !important;
+        padding: 60px 15px !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+    }
+    .frame229 .frame228,.frame227,.frame226,.frame225{
+        scroll-snap-align: start;
+        min-width: 150px !important;
+    }
+    .frame224{
+        padding: 60px 15px !important;
     }
     .frame219 .frame216{
         flex-wrap: wrap;
@@ -103,8 +145,16 @@ h1{
     .frame205{
         width: 130px;
     }
+    header{
+        padding-top: 10px !important;
+        padding-left: 0px !important; 
+        padding-right: 0px !important;
+    }
     header #logo{
         width: 100% !important;
+        height: 33px !important;
+        border-bottom: 1px solid #DDDDDD;
+        padding-bottom: 10px !important;
     }
     header nav{
         display: none !important;
@@ -119,11 +169,36 @@ h1{
         text-align: left !important;
     }
     header .hamburger {
+        padding-left: 15px;
         display: flex !important;
     }
-    #menu:checked + .hamburger + nav +{
+    header .button-group{
+        padding-right: 15px;
+    }
+    #menu:checked ~ nav {
         display: flex !important;
         background-color: #EBEBEB;
+    }
+    #menu:checked ~ .hamburger #open {
+        display: none !important;
+    }
+    #menu:checked ~ .hamburger #close {
+        display: flex !important;
+    }
+    footer{
+        padding:20px 0px!important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    footer #logo1{
+        padding-bottom: 20px;
+    }
+    footer .frame199{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #dddddd;
     }
 }
 @media screen and (max-width: 488px) {
@@ -152,8 +227,17 @@ header #menu{
 }
 .hamburger {
     display: none;
-    font-size: 24px;
     cursor: pointer;
+}
+.hamburger b{
+    font-size: 24px;
+}
+.hamburger #close{
+    font-size: 24px;
+    display: none;
+}
+.hamburger #open {
+    font-size: 24px;
 }
 header a{
     text-decoration: none;
@@ -337,7 +421,7 @@ header #logo{
     gap: 5px;
 }
 .frame139 .frame223{
-    max-width: 350px;   
+    width: 250px;   
 }
 .frame139 .frame223 .frame_text{
     padding-top: 20px;
