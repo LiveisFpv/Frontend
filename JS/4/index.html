@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">click to add</button>
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", () => {
+            const listItems = document.querySelector("ul")
+            const li=document.createElement("li");
+            li.textContent = "New item";
+            listItems.appendChild(li)
+        });
+    </script>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        const listItems = document.querySelector("ul");
+        listItems.addEventListener("click", (event) => {
+            const listItem = document.querySelectorAll("li");
+            listItem.forEach(item => {
+                item.style.backgroundColor = "";
+            });
+            if (event.target.tagName === "LI") {
+                event.target.style.backgroundColor = "red";
+            }
+        });
+    </script>
+</body>
+</html>

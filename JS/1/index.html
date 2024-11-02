@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="go">Go to Google</button>
+    <button type="button" id="back">Back</button>
+    <p>url</p>
+    <script>
+        const goButton = document.getElementById('go');
+        const backButton = document.getElementById('back');
+        const urlParagraph = document.querySelector('p');
+        urlParagraph.textContent = location.href;
+        
+        goButton.addEventListener('click', () => {
+            location.href='https://www.google.com/'
+        });
+        
+        backButton.addEventListener('click', () => {
+            if (window.history.length > 1) {
+                window.history.back();
+            }
+        });
+    </script>
+    <ul></ul>
+</body>
+</html>

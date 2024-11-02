@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <h2>Section 1</h2>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <ul>
+        <h2>Section 2</h2>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        document.body.addEventListener('click', function(event){
+            const listItem = document.querySelectorAll("li");
+            listItem.forEach(item => {
+                item.style.backgroundColor = "";
+            });
+            if (event.target.tagName === "LI") {
+                event.target.style.backgroundColor = "red";
+            }
+        })
+    </script>
+</body>
+</html>
