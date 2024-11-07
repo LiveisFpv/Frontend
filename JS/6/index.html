@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag'n'Drop Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Перетаскивание изображений в галерею</h1>
+    <div class="container">
+        <div id="available" class="box">
+            <img src="Canada.jpg" draggable="true" id="img1" alt="Image 1">
+            <img src="landscape.jpg" draggable="true" id="img2" alt="Image 2">
+            <img src="03.jpeg" draggable="true" id="img3" alt="Image 3">
+            <img src="Bridges.jpg" draggable="true" id="img4" alt="Image 4">
+        </div>
+        <div id="gallery" class="box gallery" ondragover="allowDrop(event)" ondrop="drop(event)">
+            
+        </div>
+    </div>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const imgId = event.dataTransfer.getData("text");
+            const img = document.getElementById(imgId);
+            if (img) { 
+                event.target.appendChild(img);
+            }
+        }
+
+        document.querySelectorAll('#available img').forEach(img => {
+            img.addEventListener('dragstart', event => {
+                event.dataTransfer.setData("text", event.target.id);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#dropZone {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 200px;
+    color: #aaa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+#dropZone.active {
+    border-color: #4CAF50;
+    background-color: #e8f5e9;
+    color: #4CAF50;
+}

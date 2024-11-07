@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.box {
+    width: 50%;
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.box img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+.gallery img {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
