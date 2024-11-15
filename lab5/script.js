@@ -22,17 +22,30 @@ const AllCards=[
 ]
 const FavoriteCards=[
     {   image: "image.png",
-        name: "Антон Котиков",
+        first_name: "Антон",
+        second_name:"Котиков",
         phone: "+7 920 472 32-23"
     },
     {   image: "image 3.png",
-        name: "Алина Давыдова",
+        first_name: "Алина",
+        second_name:"Давыдова",
         phone: "+7 920 472 32-23"
     }
 ]
+var currentCards=AllCards
+
 const Select = document.getElementById("select_sort")
 Select.addEventListener("change", selectOption);
-
+const buttonAll = document.getElementById("b1");
+const buttonSaved = document.getElementById("b2");
+buttonAll.addEventListener("click", () => 
+    {   currentCards = AllCards;
+        displayCards(AllCards)
+        selectOption()});
+buttonSaved.addEventListener("click", () => 
+    {   currentCards = FavoriteCards;
+        displayCards(FavoriteCards)
+        selectOption()});
 function clickCards(e){
     
 }
@@ -42,7 +55,7 @@ function selectOption() {
 }
 
 function sortCards(option) {
-    let sortedCards = [...AllCards];
+    let sortedCards = [...currentCards];
     if (option === "По фамилии") {
         displayCards(sortedCards.sort((a,b)=>{
             if (a.second_name.toLowerCase() < b.second_name.toLowerCase()) {
@@ -66,7 +79,7 @@ function sortCards(option) {
     }));
     }
     else {
-        displayCards(AllCards);
+        displayCards(currentCards);
     }
 }
 function loadData(){
