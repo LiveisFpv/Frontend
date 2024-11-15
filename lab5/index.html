@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+        <img src="logo.svg" alt="logo" width="22px" height="22px" class="header-image">
+        <div class="header-name">Вариант 7</div>
+        </div>
+        <div>
+        <form action="Profile" method="GET">
+        <button onclick="Profile" id="profile"></button>
+        </form>    
+        </div>
+    </header>
+    <div class="frame1">
+        <form action="sort" method="GET" class="button-group">
+        <button onclick="All" id="b1">Все контакты</button>
+        <button onclick="Saved" id="b2">Избранное</button>
+        </form>
+        <form action="sort" method="GET">
+        <select name="" id="">
+            <option value="По умолчанию">По умолчанию</option>
+            <option value="По фамилии">По фамилии</option>
+            <option value="По имени">По имени</option>
+        </select>
+        </form>
+    </div>
+    <div class="frame2">
+        <div class="frame3">
+            <img src="image.png" class="image" alt="image">
+            <p class="name">Антон Котиков</p>
+            <p class="phone">+7 920 472 32-23</p>
+        </div>
+        <div class="frame3">
+            <img src="image 1.png" class="image" alt="image">
+            <p class="name">Диана Фролова</p>
+            <p class="phone">+7 920 472 32-23</p>
+        </div>
+        <div class="frame3">
+            <img src="image 2.png" class="image" alt="image">
+            <p class="name">Анастасия Лебедева</p>
+            <p class="phone">+7 920 472 32-23</p>
+        </div>
+        <div class="frame3">
+            <img src="image 3.png" class="image" alt="image">
+            <p class="name">Алина Давыдова</p>
+            <p class="phone">+7 920 472 32-23</p>
+        </div>
+    </div>
+    <footer class="footer">
+        &#9426; Вариант 7. Насонов Николай, группа ПИ-22-1
+    </footer>
+</body>
+</html>
