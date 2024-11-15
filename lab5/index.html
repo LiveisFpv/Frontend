@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="loadData()">
     <header class="header">
         <div class="header-content">
         <img src="logo.svg" alt="logo" width="22px" height="22px" class="header-image">
@@ -35,26 +35,9 @@
         </select>
         </form>
     </div>
-    <div class="frame2">
-        <div class="frame3">
-            <img src="image.png" class="image" alt="image">
-            <p class="name">Антон Котиков</p>
-            <p class="phone">+7 920 472 32-23</p>
-        </div>
-        <div class="frame3">
-            <img src="image 1.png" class="image" alt="image">
-            <p class="name">Диана Фролова</p>
-            <p class="phone">+7 920 472 32-23</p>
-        </div>
-        <div class="frame3">
-            <img src="image 2.png" class="image" alt="image">
-            <p class="name">Анастасия Лебедева</p>
-            <p class="phone">+7 920 472 32-23</p>
-        </div>
-        <div class="frame3">
-            <img src="image 3.png" class="image" alt="image">
-            <p class="name">Алина Давыдова</p>
-            <p class="phone">+7 920 472 32-23</p>
+    <div class="frame2" id="cards">
+        <div id="loader" class="nothid">
+            <img src="loading.svg" class="load">
         </div>
     </div>
     <footer class="footer">

@@ -19,11 +19,11 @@ const AllCards=[
 function loadData(){
     setTimeout(() => {
         document.getElementById("loader").classList.add("hidden");
-        displayCards(cardsData);
-    }, 300);
+        displayCards(AllCards);
+    }, 1000);
 }
 function displayCards(cards) {
-    const container = document.getElementById("frame2");
+    const container = document.getElementById("cards");
     container.innerHTML = '';
 
     cards.forEach(card => {
