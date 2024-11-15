@@ -33,6 +33,9 @@ const FavoriteCards=[
 const Select = document.getElementById("select_sort")
 Select.addEventListener("change", selectOption);
 
+function clickCards(e){
+    
+}
 function selectOption() {
     selected=Select.options[Select.selectedIndex].value;
     sortCards(selected);
@@ -41,10 +44,26 @@ function selectOption() {
 function sortCards(option) {
     let sortedCards = [...AllCards];
     if (option === "По фамилии") {
-        displayCards(sortedCards.sort((a,b)=>a.second_name < b.second_name));
+        displayCards(sortedCards.sort((a,b)=>{
+            if (a.second_name.toLowerCase() < b.second_name.toLowerCase()) {
+              return -1;
+            }
+            if (a.second_name.toLowerCase() > b.second_name.toLowerCase()) {
+              return 1;
+            }
+            return 0;
+    }));
     } 
     else if (option === "По имени") {
-        displayCards(sortedCards.sort((a,b)=>a.first_name < b.first_name));
+        displayCards(sortedCards.sort((a,b)=>{
+            if (a.first_name.toLowerCase() < b.first_name.toLowerCase()) {
+              return -1;
+            }
+            if (a.first_name.toLowerCase() > b.first_name.toLowerCase()) {
+              return 1;
+            }
+            return 0;
+    }));
     }
     else {
         displayCards(AllCards);
