@@ -1,14 +1,28 @@
 const AllCards=[
     {   image: "image.png",
-        name: "Антон Котиков",
+        first_name: "Антон",
+        second_name:"Котиков",
         phone: "+7 920 472 32-23"
     },
     {   image: "image 1.png",
-        name: "Диана Фролова",
+        first_name: "Диана",
+        second_name: "Фролова",
         phone: "+7 920 472 32-23"
     },
     {   image: "image 2.png",
-        name: "Анастасия Лебедева",
+        first_name: "Анастасия",
+        second_name:"Лебедева",
+        phone: "+7 920 472 32-23"
+    },
+    {   image: "image 3.png",
+        first_name: "Алина",
+        second_name:"Давыдова",
+        phone: "+7 920 472 32-23"
+    }
+]
+const FavoriteCards=[
+    {   image: "image.png",
+        name: "Антон Котиков",
         phone: "+7 920 472 32-23"
     },
     {   image: "image 3.png",
@@ -16,12 +30,33 @@ const AllCards=[
         phone: "+7 920 472 32-23"
     }
 ]
+const Select = document.getElementById("select_sort")
+Select.addEventListener("change", selectOption);
+
+function selectOption() {
+    selected=Select.options[Select.selectedIndex].value;
+    sortCards(selected);
+}
+
+function sortCards(option) {
+    let sortedCards = [...AllCards];
+    if (option === "По фамилии") {
+        displayCards(sortedCards.sort((a,b)=>a.second_name < b.second_name));
+    } 
+    else if (option === "По имени") {
+        displayCards(sortedCards.sort((a,b)=>a.first_name < b.first_name));
+    }
+    else {
+        displayCards(AllCards);
+    }
+}
 function loadData(){
     setTimeout(() => {
         document.getElementById("loader").classList.add("hidden");
         displayCards(AllCards);
     }, 1000);
 }
+
 function displayCards(cards) {
     const container = document.getElementById("cards");
     container.innerHTML = '';
@@ -32,12 +67,12 @@ function displayCards(cards) {
 
         const imageElement = document.createElement("img")
         imageElement.src = card.image;
-        imageElement.alt = card.name;
+        imageElement.alt = card.first_name+" "+card.second_name;
         imageElement.classList.add("image");
 
         const nameElement = document.createElement("p");
         nameElement.classList.add("name");
-        nameElement.innerText = card.name;
+        nameElement.innerText = card.first_name+" "+card.second_name;
 
         const phoneElement = document.createElement("p");
         phoneElement.classList.add("phone");
