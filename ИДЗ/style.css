@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color:#141415;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36.5px;
+}
+p{
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+}
+a{
+    color: #51ACFF;
+    text-decoration: none;
+}
+#buy{
+    text-align: center !important;
+    margin-top: 47px;
+}
+#title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48.61px;
+    text-align: center;
+}
+.card{
+    width: 96px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    gap: 65px;
+    padding-left: 111px;
+    padding-right: 111px;
+}
+.rectangle{
+    margin-top: 16px;
+    height: 4px;
+    width: 100%;
+    background:linear-gradient(270deg, #FDA472 0%, #F7B78F 100%);
+}
