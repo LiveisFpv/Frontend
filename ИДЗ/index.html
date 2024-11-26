@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="slider-container">
+        <input type="range" id="slider" min="0" max="100" value="0">
+    </div>
+    <div id="content">
     <header>
         <img src="apple.svg" alt="Apple">
     </header>
     <h1 id="title">Our most stunning take on post-production.</h1>
     <a href="#" id="buy">Buy now &#10095;</a>
     <div class="imac">
-        <img src="Imac Mockup.svg" alt="Imac">
+        <iframe src="https://www.youtube.com/embed/eDqfg_LexCQ?si=mGAQevllzaMJRCZB" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
     </div>
     <div class="cards">
         <div class="card">
@@ -44,5 +55,6 @@
         <p>All rights reserved. Copyright © 2019 Apple Inc. 1 Infinite Loop, Cupertino, CA 95014</p>
         <p>This email was sent to hello@you.com because you indicated that you’d like to stay up to date on the latest features, services, support info and offers for Final Cut Pro. You can unsubscribe from Final Cut Pro emails <a href="#">here</a></p>
     </footer>
+</div>
 </body>
 </html>
