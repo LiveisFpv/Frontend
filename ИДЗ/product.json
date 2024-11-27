@@ -1,0 +1,33 @@
+{
+    "iphone": [
+        {
+            "name": "iPhone 16",
+            "price": 1200
+        },
+        {
+            "name": "iPhone 16 Pro",
+            "price": 1500
+        }
+
+    ],
+    "ipad": [
+        {
+            "name": "iPad Air",
+            "price": 800
+        },
+        {
+            "name": "iPad Pro",
+            "price": 1100
+        }
+    ],
+    "mac": [
+        {
+            "name": "Apple MacBook Pro",
+            "price": 3000
+        },
+        {
+            "name": "Apple MacBook Air",
+            "price": 2000
+        }
+    ]
+}
