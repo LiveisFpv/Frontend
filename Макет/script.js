@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const passwordError = document.getElementById("passwordError");
     const button = document.getElementById("subbutton");
 
-    // Маска для телефона
-    // phoneInput.addEventListener("input", (e) => {
-    //     let value = phoneInput.value.replace(/\D/g, "");
-    //     value = value.substring(0, 11);
-    //     let formattedValue = "+7 (";
-    //     if (value.length > 1) formattedValue += value.substring(1, 4);
-    //     if (value.length >= 5) formattedValue += ") " + value.substring(4, 7);
-    //     if (value.length >= 8) formattedValue += "-" + value.substring(7, 9);
-    //     if (value.length >= 10) formattedValue += "-" + value.substring(9, 11);
-    //     phoneInput.value = formattedValue;
-    // });
+    //Маска для телефона
+    phoneInput.addEventListener("input", (e) => {
+        let value = phoneInput.value.replace(/\D/g, "");
+        value = value.substring(0, 11);
+        let formattedValue = "+7 (";
+        if (value.length > 1) formattedValue += value.substring(1, 4);
+        if (value.length >= 5) formattedValue += ") " + value.substring(4, 7);
+        if (value.length >= 8) formattedValue += "-" + value.substring(7, 9);
+        if (value.length >= 10) formattedValue += "-" + value.substring(9, 11);
+        phoneInput.value = formattedValue;
+    });
     emailInput.addEventListener("input", (e) => {
         if (emailInput.value.length > 0) {
             console.log("button enabled");
@@ -37,14 +37,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         let isValid = true;
 
-        // Валидация телефона
-        // const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
-        // if (!phoneRegex.test(phoneInput.value)) {
-        //     phoneError.classList.remove("hidden");
-        //     isValid = false;
-        // } else {
-        //     phoneError.classList.add("hidden");
-        // }
+        //Валидация телефона
+        const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+        if (!phoneRegex.test(phoneInput.value)) {
+            phoneError.classList.remove("hidden");
+            isValid = false;
+        } else {
+            phoneError.classList.add("hidden");
+        }
 
         // Валидация почты
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
