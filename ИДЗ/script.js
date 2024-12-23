@@ -1,5 +1,5 @@
 var Json = null;
-
+var lastValue = 0
 async function load(sortBy = "date") {
     await fetch("./product.json")
         .then(response => response.json())
@@ -44,16 +44,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     const content = document.getElementById("content");
 
     slider.addEventListener("input", () => {
-        const value = slider.value;
-        var lastValue = 0
+        const value = parseInt(slider.value, 10);
         console.log(value);
-        if (value == 100){
-            slider_cont=document.getElementById("slider-container");
-            slider_cont.style.display="none"
-        }
         if (value < lastValue) {
             slider.value = lastValue;
             return;
+        }
+        if (value == 100){
+            slider_cont=document.getElementById("slider-container");
+            slider_cont.style.display="none"
         }
         lastValue = value;
         const offset = -100 + (value * 100)/100;

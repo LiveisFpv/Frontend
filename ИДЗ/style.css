@@ -65,6 +65,7 @@ header{
     width: 100%;
     display: none;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: end;
     padding: 20px;
@@ -86,6 +87,7 @@ header{
 #category{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
     justify-content: space-around;
@@ -129,9 +131,23 @@ header{
     width: 150px;
     height: auto;
 }
+@media screen and (max-width: 700px){
+    .imac{
+        width: 300px !important;
+        aspect-ratio: 635/489 !important;
+    }
+    iframe{
+        margin-right: 3px !important;
+        margin-top: 21px !important;
+        width: 199px !important;
+        height: 112px !important;
+    }
+}
 .imac{
-    width: 635px;
-    height: 489px;
+    max-width: 635px;
+    width: 100%;
+    aspect-ratio: 635/489;
+    height: auto;
     background-image: url(Imac\ Mockup.svg);
     background-size: cover;
     display: flex;
@@ -179,6 +195,7 @@ a{
 }
 .card{
     width: 96px;
+    margin: auto;
 }
 .cards{
     display: flex;

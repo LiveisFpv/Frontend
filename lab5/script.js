@@ -1,38 +1,15 @@
-const AllCards=[
-    {   image: "image.png",
-        first_name: "Антон",
-        second_name:"Котиков",
-        phone: "+7 920 472 32-23"
-    },
-    {   image: "image 1.png",
-        first_name: "Диана",
-        second_name: "Фролова",
-        phone: "+7 920 472 32-23"
-    },
-    {   image: "image 2.png",
-        first_name: "Анастасия",
-        second_name:"Лебедева",
-        phone: "+7 920 472 32-23"
-    },
-    {   image: "image 3.png",
-        first_name: "Алина",
-        second_name:"Давыдова",
-        phone: "+7 920 472 32-23"
-    }
-]
-const FavoriteCards=[
-    {   image: "image.png",
-        first_name: "Антон",
-        second_name:"Котиков",
-        phone: "+7 920 472 32-23"
-    },
-    {   image: "image 3.png",
-        first_name: "Алина",
-        second_name:"Давыдова",
-        phone: "+7 920 472 32-23"
-    }
-]
-var currentCards=AllCards
+
+var AllCards=null;
+var FavoriteCards=null
+var currentCards=null
+fetch('./data.json')
+.then(response => response.json())
+.then(json => {console.log(json)
+    AllCards=json.Allcards
+    console.log(AllCards)
+    FavoriteCards=json.FavoriteCards
+    currentCards=AllCards
+})
 
 const Select = document.getElementById("select_sort")
 Select.addEventListener("change", selectOption);
